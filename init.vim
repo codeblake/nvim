@@ -6,14 +6,14 @@
 " ██║██║ ╚████║██║   ██║   ██║██║  ██║███████╗███████║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
 " ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
 
-" PLUGINS
-source ~/.config/nvim/plugins.vim
+" Plugins
+exe "so" . stdpath("config") . "/plugins.vim"
 
-" MAPPINGS
-source ~/.config/nvim/mappings.vim
+" Mappings
+exe "so" . stdpath("config") . "/mappings.vim"
 
-" SETTINGS
-source ~/.config/nvim/settings.vim
+" Settings
+exe "so" . stdpath("config") . "/settings.vim"
 
-" PLUGIN SETTINGS
-source ~/.config/nvim/plugin-settings.vim
+" Plugin Settings
+exe "so" . stdpath("config") . "/plugin-settings.vim"

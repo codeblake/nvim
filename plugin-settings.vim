@@ -44,7 +44,8 @@ set updatetime=100
 
 " STARTIFY
 "Show cursor line in Startify
-au User Startified setl cul
+autocmd User Startified setlocal cursorline
+
 " Custom header
 let g:startify_custom_header = map(split(system('nvim --version | head -n 1'), '\n'), '"   ". v:val')
 
