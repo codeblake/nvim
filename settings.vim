@@ -14,6 +14,7 @@ set clipboard^=unnamed,unnamedplus                                    " Use syst
 set spell spelllang=en_gb                                             " Set spell check language
 set noshowmode                                                        " hide mode text
 set autochdir                                                         " Automatically change directory when opening file
+set hidden                                                            " Switch buffers without saving
 
 " Highlight trailing whitespace
 highlight TrailingWhiteSpace ctermbg=NONE ctermfg=red
@@ -25,11 +26,12 @@ highlight EndOfBuffer ctermbg=NONE ctermfg=black
 " No background for opacity
 highlight Normal ctermbg=NONE
 
-"Smaller tabs for html files
+" Smaller tabs for html files
 autocmd filetype html,htmldjango setlocal ts=2 sts=2 sw=2 noet
 
-"Make help window appear vertically
+" Make help window appear vertically
 autocmd filetype help :wincmd L
 
-"Quit help with q
+" Quit help with q
 autocmd filetype help nnoremap <buffer> q :q<CR>
+

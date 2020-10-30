@@ -45,6 +45,7 @@ set updatetime=100
 " STARTIFY
 "Show cursor line in Startify
 autocmd User Startified setlocal cursorline
+autocmd User Startified highlight Cursor ctermbg=NONE
 
 " Custom header
 let g:startify_custom_header = map(split(system('nvim --version | head -n 1'), '\n'), '"   ". v:val')
@@ -55,3 +56,6 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" FUGITIVE
+autocmd filetype fugitive setlocal nonumber norelativenumber nolist

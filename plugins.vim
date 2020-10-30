@@ -29,6 +29,7 @@ call plug#begin('~/.config/nvim/plugins')
 	Plug 'sheerun/vim-polyglot'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-fugitive'
+	Plug 'aymericbeaumet/vim-symlink'
 call plug#end()
 
 if plug_install
