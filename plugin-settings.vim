@@ -41,6 +41,10 @@ let g:highlightedyank_highlight_duration = 500
 
 " SIGNIIFY default updatetime 4000ms is not good for async update (for signify)
 set updatetime=100
+highlight SignColumn ctermbg=NONE
+highlight SignifySignAdd ctermfg=GREEN ctermbg=NONE
+highlight SignifySignChange ctermfg=YELLOW ctermbg=NONE
+highlight SignifySignDelete ctermfg=RED ctermbg=NONE
 
 " STARTIFY
 "Show cursor line in Startify

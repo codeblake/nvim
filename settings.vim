@@ -6,15 +6,17 @@
 " ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║
 " ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
 
-if has_key(plugs,"gruvbox") | colorscheme gruvbox | endif             " Set theme
-set number relativenumber                                             " Set line numbers
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab                  " Set tab size
-set list listchars=eol:↴,tab:➔\ ,trail:~,extends:»,precedes:«,space:· " White space characters
-set clipboard^=unnamed,unnamedplus                                    " Use system clipboard
-set spell spelllang=en_gb                                             " Set spell check language
-set noshowmode                                                        " hide mode text
-set autochdir                                                         " Automatically change directory when opening file
-set hidden                                                            " Switch buffers without saving
+if has_key(plugs,"gruvbox") | colorscheme gruvbox | endif        " Theme
+set nonumber norelativenumber                                    " Line numbers
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab             " Tab size
+set listchars=eol:↴,tab:➔\ ,trail:~,extends:»,precedes:«,space:· " White-space characters
+set clipboard^=unnamed,unnamedplus                               " Use system clipboard
+set spell spelllang=en_gb                                        " Spell check language
+set noshowmode                                                   " Hide mode text
+set autochdir                                                    " Automatically change directory when opening file
+set hidden                                                       " Switch buffers without saving
+set nowrap                                                       " Word wrap
+set nolist                                                       " Show whitespace characters
 
 " Highlight trailing whitespace
 highlight TrailingWhiteSpace ctermbg=NONE ctermfg=red

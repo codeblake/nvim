@@ -30,6 +30,7 @@ call plug#begin('~/.config/nvim/plugins')
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-fugitive'
 	Plug 'aymericbeaumet/vim-symlink'
+	Plug 'tpope/vim-commentary'
 call plug#end()
 
 if plug_install
